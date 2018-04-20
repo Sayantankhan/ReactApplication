@@ -9,3 +9,6 @@ npm i babel-loader babel-core babel-preset-env babel-preset-react --save-dev
 
 React Configuration ::
 npm i react react-dom --save-dev
+
+font-awsome,semantic UI Configuration::
+npm install --save font-awesome semantic-ui-css semantic-ui-react
