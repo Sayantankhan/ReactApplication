@@ -12,3 +12,6 @@ npm i react react-dom --save-dev
 
 font-awsome,semantic UI Configuration::
 npm install --save font-awesome semantic-ui-css semantic-ui-react
+
+react,axios,redux Configuration ::
+npm install --save axios react-router react-router-dom redux react-redux redux-logger redux-thunk
