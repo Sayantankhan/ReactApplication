@@ -5,14 +5,14 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
   devtool: debug ? "inline-sourcemap" : "source-map",
-  entry: ["./src/js/app.js"],
+  entry: ["./src/js/index.js"],
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "js/bundle.min.js"
   },
   devServer: {
-	contentBase: "./dist",
-	compress: true,
+  	contentBase: "./dist",
+  	compress: true,
     port: 9000
   },
   module: {
@@ -28,6 +28,6 @@ module.exports = {
   },
   plugins: debug ? [/*if not production do nothing*/] : [
 	/*if production do below */
-	new UglifyJSPlugin({ sourceMap: true }), //to minify your js code , remove comments
+	new UglifyJSPlugin({ sourceMap: true }) //to minify your js code , remove comments
   ]
 };
